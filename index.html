@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Ayomide Olugbile</title>
 </head>
 <body>
-    <h3>Olugbile Ayomide</h3>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="personal-name">Ayomide Olugbile</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/ayomidhe">Linkedin</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/my-picture.jpg" alt="passport-photo">
+            <p>Hello! I'm Ayomide Olugbile, a web development enthusiast from Nigeria, currently studying at Brigham Young University Idaho. I am a dedicated front-end developer specializing in interactive, user-centric websites and web applications. With expertise in graphic design, and modern web technologies, I am committed to delivering high-performance applications that meet diverse organizational needs.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/ayomidhe">LinkedIn</a>
+                    <a href="https://github.com/lasso29">GitHub</a>
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a>
+                </li>
+            </ul>
+
+        </section>
+        <section class="card">
+            <h2>Ibadan, Nigeria</h2>
+            <img src="images/nigeria-flag.jpg" alt="Official Flag of Nigeria">
+            <p>Nigeria, officially the Federal Republic of Nigeria, is a West African country with a population of approximately 213 million. It is rich in cultural diversity, housing over 250 ethnic groups and major languages including Hausa, Yoruba, Igbo, Fulani, and Ibibio. The nation's culture is a blend of traditional and modern practices. Historically, Nigeria has a rich past marked by ancient civilizations such as the Nok culture, which dates back to around 1000 BC. The region saw the rise and fall of several powerful kingdoms and empires, including the Hausa city-states, the Yoruba kingdoms, and the Igbo societies. Nigeria was colonized by the British in the late 19th century and gained independence in 1960. Since then, it has developed into a significant economic and cultural hub in Africa.</p>
+        </section>
+
+        <section class="card">
+            <h2>Tutorials and Resources</h2>
+            <p>Check out these great resources to learn web development:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> - Comprehensive resource for web developers, by Mozilla.</li>
+                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> - Free online coding bootcamp.</li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a> - Tips, tricks, and techniques on using CSS.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-details">&copy; <span id="currentyear"></span> &#127803; Ayomide Olugbile &#127803; Nigeria</p>
+        <p class="footer-details" id="lastModified"></p>
+    </footer>
+<script src="scripts/getdate.js" defer></script>
 </body>
-</html>
+</html> class="footer-details"
