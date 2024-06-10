@@ -32,9 +32,6 @@ header {
     color: yellow;
 }
 
-p{
-    text-align: justify;
-}
 
 header h1 {
     margin-bottom: 0.5rem;
@@ -117,9 +114,7 @@ footer {
     margin-top: 2rem;
 }
 
-.footer-details{
-    text-align: center;
-}
+
 
 /* Span for current year */
 footer span {
