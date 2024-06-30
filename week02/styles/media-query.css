@@ -8,7 +8,7 @@ header, main, footer {
     margin: 1rem auto;
     border: 1px solid #ccc;
     padding: 1rem;
-    background-color: #1463F3;
+    background-color: #e0f7fa;
 }
 
 /* Declare the main element to be a CSS grid */
@@ -23,6 +23,3 @@ section {
     background-color: #ffffff;
 }
 
-header,footer{
-    color: #ffffff;
-}
