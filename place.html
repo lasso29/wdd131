@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Title</title>
+    <meta name="description" content="Assignment to apply pseudo selector implementation in CSS. Specifically by adding an image next to a h tag"/>
+    <meta name="author" content="Ayomide Olugbile"/>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="icon" type="image/x-icon" href="images/nigeria.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NIGERIA</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/gfr.jpg"/>
+            <img src="images/gfr.jpg" alt="farm in NIgeria">
+            
+        </picture>
+        <article class="data-box">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area:</b> 923,770 km²</li>
+                <li><b>Population:</b> 228,181,000 (2024 est)</li>
+                <li><b>Capital:</b> Abuja</li>
+                <li><b>Tribe:</b> Yoruba, Hausa, Igbo </li>
+                <li><b>Currency:</b> Naira (NGN)</li>
+                <li><b>Time Zone:</b> West Africa Time (WAT) </li>
+                <li><b>Calling Code:</b> +234</li>
+                <li><b>Internet TLD:</b> .ng</li>
+            </ul>
+        </article>
+        <article class="weather-box">
+            <h2>Weather</h2>
+            <ul>
+                <li><b>Temperature:</b> <span id="tempData">37</span>°C</li>
+                <li><b>Conditions:</b> Partly Cloudy</li>
+                <li><b>Wind:</b> <span id="windSpeedData">9.7</span> km/h</li>
+                <li><b>Wind Chill:</b> <span id="windChillData"></span></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p class="copyright">&copy;2024 | Ayomide Olugbile | Ibadan, NIgeria</p>
+        <p class="gold_text">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
