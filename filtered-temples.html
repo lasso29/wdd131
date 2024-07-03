@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests."/>
+    <meta name="author" content="Ayomide Olugbile"/>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="dynamic-title-container"><h1>Temple Album</h1></div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" id="homeFilter">Home</a></li>
+                <li><a href="#" id="oldFilter">Old</a></li>
+                <li><a href="#" id="newFilter">New</a></li>
+                <li><a href="#" id="largeFilter">Large</a></li>
+                <li><a href="#" id="smallFilter">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Home</h2>
+            <div class="grid-temples">
+                
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="copyright">&copy;2024 | Ayomide Olugbile | Ibadan, Nigeria</p>
+        <p class="gold_text">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
