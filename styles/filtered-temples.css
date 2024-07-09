@@ -42,13 +42,19 @@ header nav a{
     color: var(--secondary-color); 
 }
 
-#menu{
-	background-color: var(--secondary-color);
-	color: var();
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+/* :root {
+    --primary-color: green;
+    --secondary-color: white;
+} */
+
+#menu {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
+
 
 #menu::before{
 	content: "☰";
