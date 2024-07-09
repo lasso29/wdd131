@@ -1,6 +1,4 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
+/* Import Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto+Mono:wght@700&display=swap');
 
 :root {
@@ -24,7 +22,9 @@ Fonts are separated by a | */
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Mono", Helvetica, sans-serif; /* Fallback */
   font-family: var(--heading-font);
+  color: #2EC4B6; /* Fallback */
   color: var(--headline-color-on-white);
 }
 
@@ -33,40 +33,45 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
 img {
   display: block;
   margin: 0 auto;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-} */
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
+  background: #CBF3F0; /* Fallback */
   background: var(--accent1-color);
 }
+
 header, footer {
   padding: 1em;
   text-align: center;
+  color: white; /* Fallback */
   color: var(--headline-color-on-color);
+  background-color: #2EC4B6; /* Fallback */
   background-color: var(--paragraph-background-color);
 }
 
 header > h1, header > h2, footer p {
+  color: white; /* Fallback */
   color: var(--headline-color-on-color);
 }
 
-footer{
+footer {
   margin-top: 2em;
 }
 
 p {
+  font-family: Inter, Helvetica, sans-serif; /* Fallback */
   font-family: var(--paragraph-font);
+  color: #2EC4B6; /* Fallback */
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
@@ -77,82 +82,102 @@ p {
   margin: 30px auto;
   text-align: center;
 }
+
 .colors th {
   background-color: #999;
 }
-.colors td{
+
+.colors td {
   width: 25%;
   height: 3em;
 }
 
 .primary {
+  background-color: #FF9F1C; /* Fallback */
   background-color: var(--primary-color);
 }
+
 .secondary {
+  background-color: #FFBF69; /* Fallback */
   background-color: var(--secondary-color);
 }
+
 .accent1 {
+  background-color: #CBF3F0; /* Fallback */
   background-color: var(--accent1-color);
 }
-.accent2{
+
+.accent2 {
+  background-color: #2EC4B6; /* Fallback */
   background-color: var(--accent2-color);
 }
 
 p.colored {
+  background-color: #2EC4B6; /* Fallback */
   background-color: var(--paragraph-background-color);
+  color: white; /* Fallback */
   color: var(--paragraph-color-on-color);
 }
 
 nav {
+  background-color: #FFBF69; /* Fallback */
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+
+nav {
   list-style-type: none;
   display: flex;
 }
+
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
 }
+
 nav a:link, nav a:visited {
+  color: #2EC4B6; /* Fallback */
   color: var(--nav-link-color);
 }
+
 nav a:hover {
+  color: white; /* Fallback */
   color: var(--nav-hover-link-color);
+  background-color: #2EC4B6; /* Fallback */
   background-color: var(--nav-hover-background-color);
 }
 
 .sitemap {
   display: grid;
   justify-content: center;
-
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-areas: 
+    ". . home home . ."
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
+
 .sitemap > div {
-
   text-align: center;
-
 }
+
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page2 {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
 }
+
 .sm-page3 {
   grid-area: page3;
   background-color: #ccc;
@@ -176,7 +201,6 @@ nav a:hover {
   border-right: 1px solid;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
@@ -184,33 +208,30 @@ nav a:hover {
   height: 10%;
 }
 
-.column li{
+.column li {
   float: left;
   clear: both;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Additions */
-
-/* Initial treatment for UL and LI */
-ul{
+ul {
   text-align: left;
 }
 
 li {
+  font-family: Inter, Helvetica, sans-serif; /* Fallback */
   font-family: var(--paragraph-font);
+  color: #2EC4B6; /* Fallback */
   color: var(--paragraph-color-on-white);
   padding: 0.4em;
 }
 
-/* Table from Contact Us Secondary Page */
-.pet-row{
+.pet-row {
   width: 90%;
   max-width: 1100px;
   margin: auto;
@@ -218,36 +239,36 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.pet-col{
+.pet-col {
   padding: 10% 15%;
 }
 
-.pet-col h3{
+.pet-col h3 {
   margin: 20px 0 40px;
 }
 
-.pet-col ul{
+.pet-col ul {
   margin: 20px 0;
 }
-.pet-col ul li{
+
+.pet-col ul li {
   margin: 15px 0;
-  size: 20px;
+  font-size: 20px;
 }
 
-#column1{
-  background-color:#ffbe6999;
+#column1 {
+  background-color: #ffbe6999;
 }
 
-#column2{
-  background-color:#ffbe696b;
+#column2 {
+  background-color: #ffbe696b;
 }
 
-#column3{
-  background-color:#ffbe693b;
+#column3 {
+  background-color: #ffbe693b;
 }
 
-/* Pet images resize for personal site plan, however all images were optimized */
-.pet{
+.pet {
   object-fit: scale-down;
   width: 300px;
   image-resolution: 100dpi;
