@@ -42,10 +42,10 @@ header nav a{
     color: var(--secondary-color); 
 }
 
-/* :root {
+:root {
     --primary-color: green;
     --secondary-color: white;
-} */
+}
 
 #menu {
     background-color: var(--secondary-color);

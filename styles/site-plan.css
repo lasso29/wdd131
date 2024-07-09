@@ -4,8 +4,8 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto+Mono:wght@700&display=swap');
 
 :root {
-  --primary-color: #FF9F1C   ;
-  --secondary-color: #FFBF69 ;
+  --primary-color: #FF9F1C;
+  --secondary-color: #FFBF69;
   --accent1-color: #CBF3F0;
   --accent2-color: #2EC4B6;
 
@@ -16,11 +16,16 @@ Fonts are separated by a | */
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #2EC4B6; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #2EC4B6  ;
+  --paragraph-background-color: #2EC4B6;
   --nav-link-color: #2EC4B6;
   --nav-background-color: #FFBF69;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #2EC4B6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
 }
 
 body {
@@ -33,10 +38,10 @@ img {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
-}
+} */
 h2 {
   text-align: center;
 }
